@@ -1,0 +1,112 @@
+/* Global Styles */
+* 
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the body fill the entire viewport height */
+  }
+  
+  /* Card Styles */
+  .card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  /* Search Bar Styles */
+  .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+  }
+  
+  .search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .search button img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Weather Icon Styles */
+  .weather-icon {
+    width: 170px;
+    margin-top: 0; /* Reset default margin for better positioning */
+  }
+  
+  /* Weather Data Styles */
+  .weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 10px; /* Added spacing for better readability */
+  }
+  
+  .weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+  }
+  
+  /* Details Section Styles */
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .col img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .humidity, .wind {
+    font-size: 28px;
+    margin-top: 0; /* Removed top margin for better spacing */
+  }
+  
+  /* Initial Hidden State for Weather Section (can be removed if weather is displayed on initial load) */
+  .weather {
+    display: none;
+  }
+  
